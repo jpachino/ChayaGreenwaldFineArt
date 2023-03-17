@@ -1,59 +1,77 @@
 
 
+ /* font-family: 'Cormorant Garamond', serif;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Montserrat', sans-serif;*/
   
-  h2,h4,h6{font-family: 'M PLUS 1p', sans-serif;
-  font-weight:400; 
+  
+  h2,h4,h6{ font-family: 'Montserrat', sans-serif;
+  font-weight:300; 
   color:black}
 
   body, html {
   height: 150%;
-  color: darkgrey;
+  color: black;
   line-height: 1.8;}
 
   h1 {
-    font-family:"Cormarant Garamond", serif;
+    font-family: 'Montserrat', sans-serif;
     text-align:center;
-    color:darkgrey;
-    font-weight:300;
+    color:black;
+    font-weight:200;
     text-transform:uppercase;
+    letter-spacing:5px;
+    
   }
   /*headings and paragraphs*/
-  h3,p {font-family:"Cormarant Garamond", serif;
+  h3,p { font-family: 'Montserrat', sans-serif;
     color:black;
-    font-weight:300;
+    font-weight:400;
     
   }
   p {font-size:18px;
   }
   h5 {
-    font-family: 'M Plus 1p', sans-serif;
-    font-weight:400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
     color:black;
+    letter-spacing:2px;
+    font-size:48px;
 
   }
   h7{
-    font-family: 'M Plus 1p', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight:100;
     color:black;}
     
-  h8 {font-family: 'M Plus 1p', sans-serif;
-    font-weight:100;
+  h8 { font-family: 'Montserrat', sans-serif;
+    font-weight:300;
     color : red;
 }
 .w3-bar-item {
   
-  align-items: center;
-  font-family:"Cormarant Garamond", serif;
+  /*align-items: center;*/
+  font-family: 'Montserrat', sans-serif;
   font-weight:300;
   
 }
 .a {
-  font-family: 'M Plus 1p', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight:300;
   text-transform:uppercase;
+  letter-spacing:0.3em;
 }
   
- 
+imgT {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+imgT:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
 
 /*Create a Parallax Effect 
 .bgimg-1, .bgimg-2, .bgimg-3 {
