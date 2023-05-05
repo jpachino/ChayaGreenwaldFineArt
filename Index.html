@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CHAYA ART</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="main3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=M+PLUS+1p:wght@100;400&family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
+
+<style>
+
+/*body,h2,h3,h4,h6 {font-family: "M PlUS", serif;}
+body, html {
+  height: 150%;
+  color: black;
+  line-height: 1.8;}
+  h1 {font-family:"Cormorant Garamond",serif;*/
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. ) 
+.bgimg-1 {
+  background-image: url('');
+  height:20%;
+  width:20%;
+  position:center;
+  align-items:center;
+  
+}
+
+
+/* Second image (Artwork) 
+.bgimg-2 {
+  background-image: url("");
+  min-height: 400px;
+}
+
+/*Third image (Contact) 
+.bgimg-3 {
+  background-image: url("");
+  min-height: 400px;
+}*/
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 60%;
+    margin: auto;
+   
+   
+  }
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+  /* Custom style to prevent carousel from being distorted 
+     if for some reason image doesn't load */
+  .carousel-item{
+    margin-left :25%;
+    margin-right:25%;
+    max-width: 50%;
+    max-height: 50%;
+  }
+</style>
+</head>
+<body>
+  <div style="background-color: rgb(153, 136, 136); padding: 10px; border: 1px solid rgb(153,136, 136);"> </div>
+<!--<h1 class="w3-xxxlarge">CHAYA ART</h1> -->
+<div style = "background-color: rgba(153, 136, 136, 0.027)" >
+
+<img class="w3-image w3-center" src="./images/Chaya Logo Options-01.jpg" alt="Logo"  width="200" height="100" 
+ hspace="25" vspace = "10">
+
+<!--<img class="w3-image w3-right" src="./images/Portraits//Arielle_Strum_Photography-188.jpg" alt="Artist" width="90" height="100" hspace="50" vspace="10"> </div>-->
+
+  <div style="background-color: rgb(153, 136, 136); padding: 5px; border: 1px solid rgb(153,136, 136);"> </div>
+
+
+  <div class="w3-center">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="./Index.html" class=" w3-bar-item w3-button">HOME</a>
+    <a href="./AboutMe.html" class="w3-bar-item w3-button w3-hide-small"></i> ABOUT ME</a>
+    
+    <a href = "./OriginalArtwork.html" class="w3-bar-item w3-button w3-hide-small">ORIGINAL ARTWORK</a>
+    <a href = "./Prints.html" class="w3-bar-item w3-button w3-hide-small">PRINTS</a>
+    <a href = "./Watercolors.html" class="w3-bar-item w3-button w3-hide-small">WATERCOLORS</a>
+    <a href = "./Commissions.html" class="w3-bar-item w3-button w3-hide-small">COMMISSIONS</a>
+    <a href="./Violins.html" class="w3-bar-item w3-button w3-hide-small"></i> VIOLINS</a>
+    <a href="./Gifting.html" class="w3-bar-item w3-button w3-hide-small"></i> GIFTING</a>
+    <a href="./Contact.html" class="w3-bar-item w3-button w3-hide-small"></i> CONTACT</a>
+   <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      SEARCH</i>-->
+    </a>
+    </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="./Index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME/a> 
+      <a href="./AboutMe.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT ME</a>
+    
+    <a href="./OriginalArtwork.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Original Artwork</a>
+    <a href="./Prints.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Prints</a>
+    <a href="./Watercolors.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Watercolors</a>
+    <a href="./Commissions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Commissions</a>
+    <a href="./Violins.html" class="w3-bar-item w3-button" onclick="toggleFunction()">VIOLINS</a>
+    <a href="./Gifting.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GIFTING</a> 
+    <a href="./Contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
+    </div>
+  </div>
+<!-- First Parallax Image with Logo Text -->
+<!--<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-center" style="white-space:nowrap;">
+    <img src="" class="w3-image w3-opacity w3-hover-opacity-off" alt="" width="200" height="133 ">
+    <br> <br> <br> 
+   <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+  </div>
+</div>-->
+<div class="container-lg my-3">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      </ol>
+      
+      <!-- Wrapper for carousel items -->
+      
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="./images/images in settings/IMG-20230418-WA0014.jpg" class=" d-block w-100 center" alt="Artwork 1">
+              
+              
+          </div>
+          <div class="carousel-item">
+              <img src="./images/Prints/NotesInTheWall.jpg" class="d-block w-100" alt="Artwork 2">
+              
+          </div>
+          <div class="carousel-item">
+              <img src="./images/Original Artwork/Yemin Moshe1.jpg" class="d-block w-100" alt="Artwork 3">
+              
+          </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"><h1>></h1></span>
+          
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"><h1><</h1></span>
+      </a>
+  </div>
+</div>
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Artist Chaya Greenwald</em></p>
+  <p>My main inspiration comes from beautiful photos of Israel, the Old City streets of Yerushalayim and anything that gives me an “Oh my gosh I need to make that into a painting” type of photo. I am a child of a Holocaust survivor. Seeing images of the old-time shtetl and days of simple Jewish life really bring out strong feelings and I want to get those feelings on a canvas to share with others.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <!--<p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>-->
+      <!--<img src="./images/Portraits/Arielle_Strum_Photography-180.jpg" class="w3-round w3-display-center w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="233">-->
+      <img src="./images/Portraits/Arielle_Strum_Photography-180.jpg" class="w3-round w3-display-center w3-image" alt="Photo of Me" width="300" height="233">
+    </div>
+
+    <!-- Hide this text on small devices 
+    <div class="w3-col m6 w3-hide-small w3-padding-large">-->
+    <div class="w3-col m6">
+      <br>
+      <p>I find that a lot of artists these days are creating artwork based on trends and styles of the time, or they only have one specific style of painting. I don’t have a ‘set’ style that defines me, which I think is unique in a sense that I can create so many different pieces and different styles of paintings.  One feature I would definitely say you will find in each of my pieces is lots of vibrant colors, some with gold or silver leaf as well.</p>
+      
+      <p> I also offer print options and semi-originals for a handful of my paintings. This means the original painting is digitally scanned and can then be printed to any size you want on canvas, metal, and archival high-quality water color paper.  A semi-original is a print that I embellish with paint and or gold leaf on top to create a more original feel. It’s amazing what today’s technology can do to make a print feel original. I do also take commissions upon request.</p>
+    </div>
+  </div>
+  
+
+
+<!--Container (Original Artwork Section) -->
+<div class="w3-content w3-container w3-padding-64" id="originalartwork">
+  <h3 class="w3-center">ORIGINAL ARTWORK</h3>
+ 
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-left w3-section">
+  <div class="w3-row-padding w3-left">
+    <div class="w3-col m4">
+     
+      <img src="./images/Original Artwork/AlefBeis.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Alef Bais">
+      <p class = "w3-left" ><strong> Alef Bais <br> $1500 </strong></p>
+
+
+      <!--</p><p class="w3-left"><h5>Alef Bais</h5><h7>Acrylic, Oil <br>47x35<br> $3,400</h7></p>-->
+
+      <br>
+    </div>
+  
+  
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Alleywayswatercolor-yellow (2).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Alleyways Watercolor Yellow">
+      <p class="w3-left"><strong>Alleyways Watercolor Yellow <br> $250</strong></p>
+     
+    </div>
+  
+  
+    
+  
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Blue_GoldLeafYerushalayim.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Blue Gold Leaf Yerushalayim"> 
+      <p class="w3-left"><strong>Blue Gold Leaf Yerushalayim </strong><br> $5000<br> <h8>SOLD</h8></p>
+    </div>
+  </div>
+ 
+     
+    
+  <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/BlueWesternWall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Blue Western Wall">
+      <p class="w3-left"><strong>Blue Western Wall </strong><br> $2200<br> </p>
+      <br>
+    </div>
+  
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/BochrimWalking.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bochrim Walking">
+      <p class="w3-left"><strong>Bochrim Walking </strong><br> $1400<br> </p>
+      <br>
+    </div>
+  
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/GoldLeafFlower.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gold Leaf Flower">
+      <p class="w3-left"><strong>Gold Leaf Flower </strong><br> $3500<br> <h8>SOLD</h8></p>
+      <br>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-col m4">
+      <img src="./images//Original Artwork/Guitar.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Guitar">
+      <p class="w3-left"><strong>Guitar </strong><br> $1000<br></p>
+      <br>
+    </div>
+  
+    <div class="w3-col m4">
+        <img src="./images/Original Artwork/JerusalemHills_Diptych.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jerusalem Hill Diptych">
+        <p class="w3-left"><strong>Jerusalem Hills Diptych</strong><br> $500<br> </p>
+    </div>
+  
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/JerusalemSilver LEaf.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jerusalem Silver Leaf">
+      <p class="w3-left"><strong>Jerusalem Silver Leaf </strong><br> $500</p>
+      <br>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-left w3-section">
+    
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Keverrochel.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kever Rochel">
+      <p class="w3-center"><strong>Kever Rochel</strong><br><em> Acrylic, Oil</em><br>40x30 <br> </p>
+      
+      
+      <br>
+    </div>
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/KotelDiptych.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kotel Diptych">
+      <p class="w3-left"><strong>Kotel Diptych </strong><br> $300</p>
+      <br>
+    </div>
+  
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/KotelGathering.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kotel Gathering">
+      <p class="w3-left"><strong>Kotel Gathering </strong><br> $900</p>
+    </div>
+
+    <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/MeaShearim.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mea Shearim">
+      <p class="w3-left"><strong>Mea Shearim </strong><br> $2000</p>
+      <br>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/NotesInTheWall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Notes in the Wall">
+      <p class="w3-left"><strong>Notes in the Wall</strong><br> $980</p>
+      <br>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/OceanfrontChuppah-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Oceanfront Chuppah">
+      <p class="w3-left"><strong>Oceanfront Chuppah </strong><br> $3750</p>
+      <br>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork//OldCityArchway.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Old City Archway">
+      <p class="w3-left"><strong>Old City Archway </strong><br> $3500<br> <h8>SOLD</h8></p>
+      <br>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/OldCityBlue.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Old City Blue">
+      <p class="w3-left"><strong>Old City Blue </strong><br> $4000<br> <h8>SOLD</h8></p>
+      
+      <br>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/OldCityStroll_brick wall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Old City Stroll" >
+      <p class="w3-left"><strong>Old City Stroll </strong><br> $2000</p>
+      <br>
+    </div>
+    </div>
+
+    <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/OldCityWatercolor(9x12).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Old City Watercolor">
+      <p class="w3-left"><strong>Old City Watercolor </strong><br> $300</p>
+      <br>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/PurpleWesternWall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Purple Western Wall">
+      <p class="w3-left"><strong>Purple Western Wall </strong><br> $2000 <br> <h8>SOLD</h8></p>
+      <br>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Shabbos Candles (2).jpg " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Shabbos Candles">
+      <p class="w3-left"><strong>Shabbos Candles Diptych</strong><br> $500<br> <h8>SOLD</h8></p>
+      <br>
+      <br>
+    <!--<a href=" zooms.html">Zoom In Views</a> -->
+    </div>
+    </div>
+
+    <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/TallmudTorah.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Talmud Torah">
+      <p class="w3-left"><strong>Talmud Torah </strong><br> $2000</p>
+      <br>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/TheHolyTemple.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Holy Temple">
+      <p class="w3-left"><strong>The Holy Temple </strong><br> $2500 <br><h8>SOLD</h8> </p>
+      <br>
+    </div>
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Venice.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Venice Watercolor">
+      <p class="w3-left"><strong>Venice Watercolor </strong><br> $300</p>
+      <br>
+    </div>
+    <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Cuba.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cuba">
+      <p class="w3-left"><strong>Cuba </strong><br> $1900</p>
+      <br>
+    </div>
+   
+    
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Yemin Moshe1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yemin Moshe">
+      <p class="w3-left"><strong>Yemin Moshe </strong><br> $4000<br> <h8>SOLD</h8></p>
+      <br>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Yerushalayim-circle.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalayim - Circle">
+      <p class="w3-left"><strong>Yerushalayim Circle </strong><br> $900</p>
+    </div>
+    </div>
+    <div class="w3-row-padding w3-left w3-section">
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/DoorwaysOfIsrael1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalayim - Circle">
+      <p class="w3-left"><strong>Doorways of Israel Series </strong><br> $900 <br> <h8>SOLD</h8></p>
+    </div>
+   
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/DoorwaysOfIsraelWC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalayim - Circle">
+      <p class="w3-left"><strong>Doorways of Israel Watercolor</strong><br> $500</p>
+    </div>
+   
+
+   
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Arielle_Strum_Photography-159.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalayim - Circle">
+      <p class="w3-left"><strong>Shul</strong><br> $3000</p>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-left w3-section"></div>
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/Fuciakotel.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalayim - Circle">
+      <p class="w3-left"><strong>Fuschia Kotel</strong><br> $1800</p>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/CityGates.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalayim - Circle">
+      <p class="w3-left"><strong>City Gates Blue</strong><br> $2300</p>
+    </div>
+
+    
+   
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Container (Prints Section) -->
+<div class="w3-content w3-container w3-padding-64" id="prints">
+  <h3 class="w3-center">PRINTS</h3>
+ 
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center w3-section">
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <img src="./images/Prints/BlueWesternWall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fuchsia Kotel     Acrylic, Oil  47x35  $3,000">
+      <p class="w3-center"><strong>Kotel Reflections - Blue</strong><br><em> Oil </em></p>
+
+      <br>
+    </div>
+  
+  
+    <div class="w3-col m4">
+      <img src="./images/Prints/bochrimwalking.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kotel painting 2">
+      <p class="w3-center"><strong>Bochurim Walking</strong><br><em> Acrylic, Oil </em><br>(prints and semi-originals available) </p>     
+      <br>
+    </div>
+  
+  
+    <div class="w3-col m4">
+      <img src="./images/Prints/goldleafflower.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kever Rochel  Acrylic, Oil 40x30  $3575 ">
+      <p class="w3-center"><strong>Abstract Flower</strong><br><em> Oil, Gold Leaf </em><br><h8>SOLD</h8><br>(prints and semi-originals available)</p>
+     
+
+      <br>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m4">
+      <img src="./images/Prints/NotesInTheWall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Family walking">
+      <br>
+    </div>
+ 
+  
+    <div class="w3-col m4">
+      <img src="./images/Prints/OldCity.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kever Rochel">
+      <p class="w3-center"><strong>Old City Archway</strong><br><em>Oil</em><br><h8>SOLD</h8> <br>(prints and semi-originals available)</p>
+           
+      <br>
+    </div>
+ 
+    <div class="w3-col m4">
+      <img src="./images/Prints/OldCityWatercolor(9x12).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalyim">
+      <p class="w3-center"><strong></strong><br><em>  </em><br> <br> </p>
+      <br>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section"> 
+    <div class="w3-col m4">
+      <img src="./images/Prints/PurpleWesternWall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bochurim Walking">
+      <p class="w3-center"><strong>Kotel Reflections - Burgundy</strong><br><em>Oil </em><br><h8>SOLD</h8> <br>(prints and semi-originals available)</p>
+     <br>
+    </div>
+ 
+    <div class="w3-col m4">
+      <img src="./images/Prints/TheHolyTemple.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Old City Blue">
+      <p class="w3-center"><strong>Beis Hamikdash</strong><br><em> Oil</em><br> <h8>SOLD</h8> <br>(prints and semi-originals available) </p>
+      <br>
+    </div>
+
+    
+  
+  </div>
+</div>
+
+
+<!-- Container (Watercolors Section) -->
+<div class="w3-content w3-container w3-padding-64" id="watercolors">
+  <h3 class="w3-center">WATERCOLORS</h3>
+  
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-left w3-section">
+  <div class="w3-row-padding w3-left">
+    <div class="w3-col m4">
+      <img src="./images/Watercolors/Alleywayswatercolor-yellow (2).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Alleyways Watercolor Yellow" >
+      <!--<p class="w3-center"><strong>Alleyways Watercolor Yellow</strong><br><em> Acrylic, Oil </em><br>47x35<br> $300</p>-->
+      <p class="w3-left"><strong>Alleyways Watercolor Yellow</strong><br>$300</p>
+      <br>
+    </div>
+  
+  
+    <div class="w3-col m4">
+      <img src="./images/Watercolors/OldCityWatercolor(9x12).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Old City Watercolor">
+      <p class="w3-left"><strong>Old City Watercolor</strong><br>$300</p>
+      <br>
+      <br>
+    </div>
+   
+  
+    <div class="w3-col m4">
+      <img src="./images/Watercolors/purplearchwaywatercolor (2).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Purple Archway Watercolor ">
+      <p class="w3-left"><strong>Purple Archway Watercolor</strong><br>$975</p>
+      <br>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-col m4">
+      <img src="./images/Watercolors/venice.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Venice Watercolor">
+      <p class="w3-left"><strong>Venice Watercolor</strong><br>$300</p>
+      <br>
+    </div>
+    <div class="w3-col m4">
+      <img src="./images/Original Artwork/DoorwaysOfIsraelWC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalayim - Circle">
+      <p class="w3-left"><strong>Doorways of Israel Watercolor</strong><br> $500</p>
+    </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+<!-- Container (Commissions Section) -->
+<div class="w3-content w3-container w3-padding-64" id="commissions">
+  <h3 class="w3-center">COMMISSIONS</h3>
+  
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  
+  
+    <!--<div class="w3-content w3-container w3-padding-64" id="YZooms">-->
+  
+
+   
+
+  <div class="w3-row-padding w3-left w3-section"> 
+    <div class="w3-col m4">
+      <img src="./images/Commissions/PurpleWesternWall.jpg"" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Purple Western Wall">
+      <p class="w3-left"><strong>Purple Western Wall</strong><br><br></p>
+      <br>
+    </div>
+ 
+    <div class="w3-col m4">
+      <img src="./images/Commissions/ShabbosCandles.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Shabbos Candles">
+      <p class="w3-center"><strong>Shabbos Candles</strong><br><br> </p>
+      
+      <br>
+    </div>
+
+    <div class="w3-col m4">
+      <img src="./images/Commissions/TheHolyTemple.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Holy Temple">
+      <p class="w3-center"><strong>The Holy Temple</strong><br><br> </p>
+      
+      <br>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-left w3-section"> 
+  <div class="w3-col m4">
+    <img src="./images/Commissions/commissionpainting-1.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Commission Piece">
+    <p class="w3-left">Commission Piece <br></p>
+    <br>
+  </div>
+  
+  <div class="w3-col m4">  
+      <img src="./images/Commissions/Yerushalayim City.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalyim">
+      <p class="w3-center"><strong>Yerushalyim City </strong><br></p>
+        <a href=" zooms2.html">Zoom In Views</a>
+           
+      <br>
+
+  </div>
+  </div>
+</div>
+
+<!-- Container (Violins Section) -->
+<div class="w3-content w3-container w3-padding-64" id="violins">
+  <h3 class="w3-center">VIOLINS</h3>
+  
+  <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-row-padding w3-left">
+      <div class="w3-col m4">
+        <img src="./images/violins/ColorSplash.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Color Splash Violin - 20x30" > <br>
+        <p class="w3-left"><strong>Color Splash <br> $500</strong></p>
+        
+        <br>
+      </div>
+    
+    
+      <div class="w3-col m4">
+        <img src="./images/Violins/Fiddler.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fiddler Violin ">
+        <p class="w3-left"><strong>Fiddler <br> $675</strong></p>
+        <br>
+      </div>
+     
+    
+      <div class="w3-col m4">
+        <img src="./images/Violins/Garden.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Garden Violin">
+      <p class="w3-left"><strong>Garden <br> $500</strong></p>
+        <br>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-left w3-section">
+      <div class="w3-col m4">
+        <img src="./images/Violins/Shivas Haminim.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Shivas Haminim Violin">
+        <p class="w3-left"><strong>Shivas Haminim <br> $500</strong></p>
+        <br>
+      </div>
+   
+    
+    </div>
+  </div>
+ <!-- Container (Gifting Section) -->
+<div class="w3-content w3-container w3-padding-64" id="GIFTING">
+  <h3 class="w3-center">GIFTING</h3>
+  
+  <div class="w3-row-padding w3-left w3-section">
+    <div class="w3-row-padding w3-left">
+      <div class="w3-col m4">
+        <img src="./images/Gifting/IMG-20230418-WA0013.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Color Splash Violin - 20x30" > <br>
+        <p class="w3-left"><strong>Asher Yatzar Lucite <br> 9"x12" <br> $75</strong></p>
+        <a href=" Giftingzooms.html">Zoom In Views</a>
+
+        
+        <br>
+      </div>
+      </div>
+    </div>
+
+ <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+<!-- Modal for full size images on click-->
+
+<div id="modal01" class="w3-modal w3-white" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-white w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center  w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class=" w3-large w3-left"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Artwork Text 
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>-->
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT ME</h3>
+
+ <!-- <h3 class="w3-center">WHERE I WORK</h3> -->
+  <h5 class="w3-center"><em>Please email or call me for information on the artwork.</em></h5>
+  <p class="w3-center"><em>Contact information below:</em></p>
+  <br>
+  <p class="w3-center"><em>Phone: 410-493-1984</em></p>
+  <p class="w3-center"><em>Email: cgreenwald05@gmail.com</em></p>
+  <p class="w3-center"><em>I look forward to connecting with you!</em></p>
+  
+   
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>@ Jsites 2022<p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+  
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

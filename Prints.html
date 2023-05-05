@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CHAYA ART</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="main3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=M+PLUS+1p:wght@100;400&family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
+
+<style>
+
+/*body,h2,h3,h4,h6 {font-family: "M PlUS", serif;}
+body, html {
+  height: 150%;
+  color: black;
+  line-height: 1.8;}
+  h1 {font-family:"Cormorant Garamond",serif;*/
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. ) 
+.bgimg-1 {
+  background-image: url('');
+  height:20%;
+  width:20%;
+  position:center;
+  align-items:center;
+  
+}
+
+
+/* Second image (Artwork) 
+.bgimg-2 {
+  background-image: url("");
+  min-height: 400px;
+}
+
+/*Third image (Contact) 
+.bgimg-3 {
+  background-image: url("");
+  min-height: 400px;
+}*/
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 60%;
+    margin: auto;
+   
+   
+  }
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+  /* Custom style to prevent carousel from being distorted 
+     if for some reason image doesn't load 
+  .carousel-item{
+    margin-left :25%;
+    margin-right:25%;
+    max-width: 50%;
+    max-height: 50%;
+  }*/
+</style>
+</head>
+<body>
+  <div style="background-color: rgb(153, 136, 136); padding: 10px; border: 1px solid rgb(153,136, 136);"> </div>
+<!--<h1 class="w3-xxxlarge">CHAYA ART</h1> -->
+<div style = "background-color: rgba(153, 136, 136, 0.027)" >
+
+<img class="w3-image w3-center" src="./images/Chaya Logo Options-01.jpg" alt="Logo"  width="200" height="100" 
+ hspace="25" vspace = "10">
+
+<!--<img class="w3-image w3-right" src="./images/Portraits//Arielle_Strum_Photography-188.jpg" alt="Artist" width="90" height="100" hspace="50" vspace="10"> </div>-->
+
+  <div style="background-color: rgb(153, 136, 136); padding: 5px; border: 1px solid rgb(153,136, 136);"> </div>
+
+
+  <div class="w3-center">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="./Index.html" class=" w3-bar-item w3-button">HOME</a>
+    <a href="./AboutMe.html" class="w3-bar-item w3-button w3-hide-small"></i> ABOUT ME</a>
+    
+    <a href = "./OriginalArtwork.html" class="w3-bar-item w3-button w3-hide-small">ORIGINAL ARTWORK</a>
+    <a href = "./Prints.html" class="w3-bar-item w3-button w3-hide-small">PRINTS</a>
+    <a href = "./Watercolors.html" class="w3-bar-item w3-button w3-hide-small">WATERCOLORS</a>
+    <a href = "./Commissions.html" class="w3-bar-item w3-button w3-hide-small">COMMISSIONS</a>
+    <a href="./Violins.html" class="w3-bar-item w3-button w3-hide-small"></i> VIOLINS</a>
+    <a href="./Gifting.html" class="w3-bar-item w3-button w3-hide-small"></i> GIFTING</a>
+    <a href="./Contact.html" class="w3-bar-item w3-button w3-hide-small"></i> CONTACT</a>
+   <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      SEARCH</i>-->
+    </a>
+    </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="./Index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME/a> 
+      <a href="./AboutMe.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT ME</a>
+    
+    <a href="./OriginalArtwork.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Original Artwork</a>
+    <a href="./Prints.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Prints</a>
+    <a href="./Watercolors.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Watercolors</a>
+    <a href="./Commissions.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Commissions</a>
+    <a href="./Violins.html" class="w3-bar-item w3-button" onclick="toggleFunction()">VIOLINS</a>
+    <a href="./Gifting.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GIFTING</a> 
+    <a href="./Contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
+    </div>
+  </div>
+      
+
+
+<!-- Container (Prints Section) -->
+<div class="w3-content w3-container w3-padding-64" id="prints">
+    <h3 class="w3-center">PRINTS</h3>
+   
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m4">
+        <img src="./images/Prints/BlueWesternWall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fuchsia Kotel     Acrylic, Oil  47x35  $3,000">
+        <p class="w3-center"><strong>Kotel Reflections - Blue</strong><br><em> Oil </em></p>
+  
+        <br>
+      </div>
+    
+    
+      <div class="w3-col m4">
+        <img src="./images/Prints/bochrimwalking.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kotel painting 2">
+        <p class="w3-center"><strong>Bochurim Walking</strong><br><em> Acrylic, Oil </em><br>(prints and semi-originals available) </p>     
+        <br>
+      </div>
+    
+    
+      <div class="w3-col m4">
+        <img src="./images/Prints/goldleafflower.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kever Rochel  Acrylic, Oil 40x30  $3575 ">
+        <p class="w3-center"><strong>Abstract Flower</strong><br><em> Oil, Gold Leaf </em><br><h8>SOLD</h8><br>(prints and semi-originals available)</p>
+       
+  
+        <br>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m4">
+        <img src="./images/Prints/NotesInTheWall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Family walking">
+        <br>
+      </div>
+   
+    
+      <div class="w3-col m4">
+        <img src="./images/Prints/OldCity.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kever Rochel">
+        <p class="w3-center"><strong>Old City Archway</strong><br><em>Oil</em><br><h8>SOLD</h8> <br>(prints and semi-originals available)</p>
+             
+        <br>
+      </div>
+   
+      <div class="w3-col m4">
+        <img src="./images/Prints/OldCityWatercolor(9x12).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Yerushalyim">
+        <p class="w3-center"><strong></strong><br><em>  </em><br> <br> </p>
+        <br>
+      </div>
+    </div>
+  
+    <div class="w3-row-padding w3-center w3-section"> 
+      <div class="w3-col m4">
+        <img src="./images/Prints/PurpleWesternWall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bochurim Walking">
+        <p class="w3-center"><strong>Kotel Reflections - Burgundy</strong><br><em>Oil </em><br><h8>SOLD</h8> <br>(prints and semi-originals available)</p>
+       <br>
+      </div>
+   
+      <div class="w3-col m4">
+        <img src="./images/Prints/TheHolyTemple.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Old City Blue">
+        <p class="w3-center"><strong>Beis Hamikdash</strong><br><em> Oil</em><br> <h8>SOLD</h8> <br>(prints and semi-originals available) </p>
+        <br>
+      </div>
+  
+      
+    
+    </div>
+  </div>
+  
+
+<!-- Footer 
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>@ Jsites 2022<p>
+</footer>-->
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+  
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <p>@ Jsites 2022<p>
+  </footer>
+   
+  <script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+    
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+  
