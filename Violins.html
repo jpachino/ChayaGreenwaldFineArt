@@ -143,16 +143,16 @@ body, html {
       <div class="w3-row-padding w3-left"> -->
         <div class="w3-row-padding w3-left w3-section">
           <div class="w3-col m4">
-            <img src="./images/Violins/ColorSplash1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Color Splash">
-            <p class="w3-left"><strong>Color Splash <br> $500</strong></p>
+            <img src="./images/Violins/ColorSplash1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<h9> Color Splash <br> $500 </h9> ">
+            <p class="w3-left"><strong>Color Splash </strong></p>
             <br>
           </div>
        
       
       
         <div class="w3-col m4">
-          <img src="./images/Violins/Fiddler.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fiddler Violin ">
-          <p class="w3-left"><strong>Fiddler <br> $675 <br> </strong></p>
+          <img src="./images/Violins/Fiddler.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<h9> Fiddler <br> $675 </h9>">
+          <p class="w3-left"><strong>Fiddler  </strong></p>
           
           <br> 
           <a href="./FiddlerZooms.html"><br>Zoom In Views</a>
@@ -160,8 +160,8 @@ body, html {
        
       
         <div class="w3-col m4">
-          <img src="./images/Violins/Garden.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Garden Violin">
-          <p class="w3-left"><strong>Garden <br> $500 <br></strong></p>
+          <img src="./images/Violins/Garden.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" <h9> Garden Violin <br> $500 </h9><br> <h8> SOLD </h8>  ">
+          <p class="w3-left"><strong>Garden </strong></p>
           <br> 
           <a href="./GardenZooms.html"><br>Zoom In Views</a>
   
@@ -170,15 +170,24 @@ body, html {
       </div>
       <div class="w3-row-padding w3-left w3-section">
         <div class="w3-col m4">
-          <img src="./images/Violins/Shivas Haminim.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Shivas Haminim Violin">
-          <p class="w3-left"><strong>Shivas Haminim <br> $500</strong></p>
+          <img src="./images/Violins/Shivas Haminim Main Page.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="<h9> Shivas Haminim <br> $500 </h9>">
+          <p class="w3-left"><strong>Shivas Haminim</strong></p>
           <br>
+          <a href="./ShivasHaminimZooms.html"><br>Zoom In Views</a>
         </div>
      
       
       </div>
     </div>
-  
+ <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image"> <br> <captionText></captionText>
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div> 
 <!-- Footer 
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
